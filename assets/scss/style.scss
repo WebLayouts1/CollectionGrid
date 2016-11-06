@@ -1,0 +1,11 @@
+/**
+ * Main Stylesheet:
+ * --------------------
+ * -> Basic styles
+ * -> Decorations
+ * -> Flex layout (Responsible for generating the "Collection grid layout")
+*/
+
+@import 'basics'; 
+@import 'decorations'; 
+@import 'flex-layout';

@@ -1,0 +1,50 @@
+/**
+ * Flexbox Styles: 
+ * (Responsible for generating the "Collection grid layout")
+ * ---------------------------------------------------------
+ * -> Colors
+ * -> font size
+ * -> Transitions
+ * -> Basic components layouts and spacing
+*/
+
+.flex-container{
+  display: flex;
+}
+
+.main-panel{
+  flex: 1; 
+  flex-direction: column; 
+
+  @media only screen and (min-width: 40em){
+    flex-direction: row;  
+  }
+}
+ 
+.main-container{
+  flex-direction: column;
+  
+  .panel{
+    flex: 1; 
+  }
+  .panel-left{ 
+    .tmb{
+      //https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+      flex-basis: 100%;
+    }
+  }
+  .panel-right{
+    flex-wrap: wrap; 
+    .tmb{ 
+      flex-basis: calc(50% - 20px);
+    }
+  }
+}
+
+.tmb{
+  display: flex; 
+  justify-content: center; 
+}
+
+
+

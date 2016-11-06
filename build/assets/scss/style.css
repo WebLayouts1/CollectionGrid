@@ -1,0 +1,103 @@
+/**
+ * Main Stylesheet:
+ * --------------------
+ * -> Basic styles
+ * -> Decorations
+ * -> Flex layout (Responsible for generating the "Collection grid layout")
+*/
+/**
+ * Basic Styles:
+ * --------------------
+ * -> Box model
+ * -> Body default styles
+*/
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,700';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.25em; }
+
+/**
+ * Basic Styles: (Web page appearance)
+ * -----------------------------------
+ * -> Colors
+ * -> font size
+ * -> Transitions
+ * -> Basic components layouts and spacing
+*/
+* {
+  /* Adding some smooth transition */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+body {
+  background: #EC1561;
+  color: #fff; }
+
+h1 {
+  font-size: 2em;
+  font-weight: 700; }
+
+h1, p {
+  margin-bottom: 0.5em; }
+
+.panel-top {
+  margin-bottom: 40px; }
+
+.main-container {
+  min-height: 100vh;
+  padding: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .main-container h2 {
+    font-size: 1.5em; }
+  .main-container .panel-left {
+    padding-right: 20px; }
+  .main-container .panel-right {
+    margin: -10px; }
+    .main-container .panel-right .tmb {
+      margin: 10px; }
+  .main-container .tmb {
+    align-items: center;
+    background: #F9BAD0;
+    border-radius: 5px; }
+
+/**
+ * Flexbox Styles: 
+ * (Responsible for generating the "Collection grid layout")
+ * ---------------------------------------------------------
+ * -> Colors
+ * -> font size
+ * -> Transitions
+ * -> Basic components layouts and spacing
+*/
+.flex-container {
+  display: flex; }
+
+.main-panel {
+  flex: 1; }
+
+.main-container {
+  flex-direction: column; }
+  .main-container .panel {
+    flex: 1; }
+  .main-container .panel-left .tmb {
+    flex-basis: 100%; }
+  .main-container .panel-right {
+    flex-wrap: wrap; }
+    .main-container .panel-right .tmb {
+      flex-basis: calc(50% - 20px); }
+
+.tmb {
+  display: flex;
+  justify-content: center; }

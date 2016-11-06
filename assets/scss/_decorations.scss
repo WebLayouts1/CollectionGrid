@@ -1,0 +1,70 @@
+/**
+ * Basic Styles: (Web page appearance)
+ * -----------------------------------
+ * -> Colors
+ * -> font size
+ * -> Transitions
+ * -> Basic components layouts and spacing
+*/
+
+*{ 
+  /* Adding some smooth transition */
+  -webkit-transition: all 0.3s ease-out;  
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+body{ 
+  background: #EC1561;
+  color: #fff;
+}
+
+h1{
+  font-size: 2em;
+  font-weight: 700;
+} 
+h1, p{
+  margin-bottom: 0.5em; 
+}
+.panel-top{
+  margin-bottom: 40px;
+}
+.main-container{ 
+  min-height: 100vh; 
+  padding: 40px; 
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; 
+  h2{
+    font-size: 1.5em;
+  }   
+  .panel-right{ 
+    margin: -10px; 
+    .tmb{
+      margin: 10px;
+    }
+  } 
+  .tmb{ 
+    align-items: center; 
+    background: #F9BAD0;
+    border-radius: 5px;
+  }
+}
+
+.main-panel{ 
+  .panel-left{
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 40em){ 
+    .panel-left{
+      padding-right: 20px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+
+
